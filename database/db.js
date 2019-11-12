@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 const db = {}
-const sequelize = new Sequelize('churchil_ticket', 'root', '', {
+const sequelize = new Sequelize('churchil_ticket', 'root', '12345six', {
   host: 'localhost',
   dialect: 'mysql',
   operatorsAliases: false,
@@ -17,3 +17,9 @@ db.sequelize = sequelize
 db.Sequelize = Sequelize
 
 module.exports = db
+// ********************
+// const Sequelize = require('sequelize');
+// const sequelize = new Sequelize('database', 'username', 'password', {
+//   host: 'localhost',
+//   dialect: 'mysql'|'sqlite'|'postgres'|'mssql'
+// }
