@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// export default function Navbar() {
-//     return (
-//         <div>
-            
-//         </div>
-//     )
-// }
-// ********************
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
@@ -23,12 +13,12 @@ class Landing extends Component {
       <ul className="navbar-nav">
         <li className="nav-item">
           <Link to="/login" className="nav-link">
-            Login
+            Admin Login
           </Link>
         </li>
         <li className="nav-item">
           <Link to="/register" className="nav-link">
-            Register
+            Admin Register
           </Link>
         </li>
       </ul>
@@ -42,7 +32,7 @@ class Landing extends Component {
           </Link>
         </li>
         <li className="nav-item">
-          <a href="" onClick={this.logOut.bind(this)} className="nav-link">
+          <a href="/" onClick={this.logOut.bind(this)} className="nav-link">
             Logout
           </a>
         </li>

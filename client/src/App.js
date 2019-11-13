@@ -7,6 +7,9 @@ import Landing from './components/Landing'
 import Login from './components/Login'
 import Register from './components/Register'
 import Profile from './components/Profile'
+import { Jumbotron } from './components/Jumbotron'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class App extends Component {
   render() {
@@ -14,6 +17,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navbar />
+          <Jumbotron />
           <Route exact path="/" component={Landing} />
           <div className="container">
             <Route exact path="/register" component={Register} />
