@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
+import Poorfile from './components/poorfile'
+import BuyTicket from './components/buyTcket'
 import Navbar from './components/Navbar'
 import Landing from './components/Landing'
 import Login from './components/Login'
@@ -23,6 +25,9 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/buyTicket" component={BuyTicket} />
+            <Route exact path="/poorfile" component={Poorfile} />
+
           </div>
         </div>
       </Router>
